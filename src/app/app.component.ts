@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from './view/header/header.component'
+import { FooterComponent } from './view/footer/footer.component'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'asu-app';
+  
 }
