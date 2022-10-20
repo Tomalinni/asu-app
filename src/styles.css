@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.lead {
+    text-align: justify;
+    text-indent: 50px;
+}
+body {
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+
