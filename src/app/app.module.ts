@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactsComponent } from './contacts/contacts.component';
@@ -16,6 +16,8 @@ import { SigninComponent } from './signin/signin.component';
 import { ShareholdersComponent } from './shareholders/shareholders.component';
 import { ShopsComponent } from './shops/shops.component';
 import { ProductionComponent } from './production/production.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { HttpClientModule} from '@angular/common/http';
 
 
 const appRoutes: Routes = [
@@ -48,7 +50,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule, 
     RouterModule.forRoot(appRoutes),
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    NgxPaginationModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
